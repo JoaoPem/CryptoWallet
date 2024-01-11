@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<form>
+  <div class= "form-group custom-margin">
+    <strong>Description:</strong>
+    <%= text_field_tag nil, @mining_type.description, class: "form-control", disabled:true %>
+  </div>
+
+<div class= "form-group custom-margin">
+    <strong>Acronym:</strong>
+    <%= text_field_tag nil, @mining_type.acronym, class: "form-control", disabled:true %>
+  </div>
+</form>
+<%= link_to 'Edit', edit_mining_type_path(@mining_type),  class: "btn btn-primary" %> |
+<%= link_to 'Back', mining_types_path,  class: "btn btn-primary" %>
